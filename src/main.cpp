@@ -1,7 +1,7 @@
 #include "Program.hpp"
 #include "Puzzles.hpp"
-#include <string>
 #include <iostream>
+#include <string>
 #include <vector>
 
 int main(int argc, char *argv[]) {
@@ -13,6 +13,7 @@ int main(int argc, char *argv[]) {
   AdventOfCode::Program::Program program(arguments);
 
   program.registerFunction(AdventOfCode::Puzzles::puzzle1);
+  program.registerFunction(AdventOfCode::Puzzles::puzzle2);
   program.run();
 
   return 0;
