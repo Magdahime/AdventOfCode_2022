@@ -37,8 +37,6 @@ bool checkAnyOverlap(Range range1, Range range2) {
 void puzzle4(std::vector<std::string> arguments) {
 
   FileReader::FileReader fr(arguments[0]);
-  std::vector<std::pair<std::pair<int, int>, std::pair<int, int>>>
-      elvesCleaningPairRanges;
   auto fullOverlappedCounter = 0;
   auto anyOverlappedCounter = 0;
   while (!fr.eof()) {
