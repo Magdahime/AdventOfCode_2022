@@ -14,6 +14,7 @@ int main(int argc, char *argv[]) {
 
   program.registerFunction(AdventOfCode::Puzzles::puzzle1);
   program.registerFunction(AdventOfCode::Puzzles::puzzle2);
+  program.registerFunction(AdventOfCode::Puzzles::puzzle4);
   program.run();
 
   return 0;
