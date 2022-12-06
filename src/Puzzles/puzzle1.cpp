@@ -28,7 +28,7 @@ void puzzle1(std::vector<std::string> arguments) {
 
   std::cout << elvesCalories[elvesCalories.size() - 1] << '\n';
 
-  auto sumOfNthelements = [=](int n, std::vector<int> numVector) -> int {
+  auto sumOfNthelements = [=](int n, const std::vector<int>& numVector) -> int {
     int partialSum = 0;
     for (int i = 0; i < n; i++) {
       partialSum += numVector[numVector.size() - (i + 1)];
