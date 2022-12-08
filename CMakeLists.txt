@@ -26,6 +26,8 @@ set(SOURCES ${PUZZLE_DIRECTORY}/puzzle1.cpp
             ${PUZZLE_DIRECTORY}/puzzle3.cpp
             ${PUZZLE_DIRECTORY}/puzzle4.cpp
             ${PUZZLE_DIRECTORY}/puzzle6.cpp
+            ${PUZZLE_DIRECTORY}/puzzle7.cpp
+            ${PUZZLE_DIRECTORY}/puzzle8.cpp
             ${SOURCE_DIRECTORY}/Program.cpp
             ${SOURCE_DIRECTORY}/main.cpp
             ${SOURCE_DIRECTORY}/FileReader.cpp

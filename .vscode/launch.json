@@ -1,0 +1,17 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Zad. 8",
+            "program": "${workspaceFolder}/bin/AdventOfCode2022.exe",
+            "args": ["6", "puzzle_input/puzzle_input_8.txt"],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
