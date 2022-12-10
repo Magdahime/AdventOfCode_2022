@@ -91,12 +91,6 @@ private:
   std::deque<std::shared_ptr<File>> children_;
 };
 
-std::string getNextSSElem(std::stringstream &ss) {
-  std::string temp;
-  ss >> temp;
-  return temp;
-}
-
 void puzzle7(std::vector<std::string> arguments) {
 
   FileReader::FileReader fr(arguments[0]);

@@ -25,6 +25,7 @@ set(SOURCES ${PUZZLE_DIRECTORY}/puzzle1.cpp
             ${PUZZLE_DIRECTORY}/puzzle2.cpp
             ${PUZZLE_DIRECTORY}/puzzle3.cpp
             ${PUZZLE_DIRECTORY}/puzzle4.cpp
+            ${PUZZLE_DIRECTORY}/puzzle5.cpp
             ${PUZZLE_DIRECTORY}/puzzle6.cpp
             ${PUZZLE_DIRECTORY}/puzzle7.cpp
             ${PUZZLE_DIRECTORY}/puzzle8.cpp

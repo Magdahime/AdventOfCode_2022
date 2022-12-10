@@ -5,12 +5,13 @@
     "version": "0.2.0",
     "configurations": [
 
+
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Zad. 8",
+            "name": "Zad. 5",
             "program": "${workspaceFolder}/bin/AdventOfCode2022.exe",
-            "args": ["6", "puzzle_input/puzzle_input_8.txt"],
+            "args": ["4", "puzzle_input/puzzle5_example.txt"],
             "cwd": "${workspaceFolder}"
         }
     ]

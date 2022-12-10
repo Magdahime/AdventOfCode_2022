@@ -17,6 +17,7 @@ int main(int argc, char *argv[]) {
   program.registerFunction(AdventOfCode::Puzzles::puzzle2);
   program.registerFunction(AdventOfCode::Puzzles::puzzle3);
   program.registerFunction(AdventOfCode::Puzzles::puzzle4);
+  program.registerFunction(AdventOfCode::Puzzles::puzzle5);
   program.registerFunction(AdventOfCode::Puzzles::puzzle6);
   program.registerFunction(AdventOfCode::Puzzles::puzzle7);
   program.registerFunction(AdventOfCode::Puzzles::puzzle8);
