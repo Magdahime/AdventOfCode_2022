@@ -89,6 +89,10 @@ void puzzle9(std::vector<std::string> arguments) {
   Position tailPosition = {0, 0};
   tailPositions.insert(tailPosition);
 
+  std::array<Position, KNOTS_NUM> rope;
+  rope.fill(Position{0, 0});
+  std::set<Position> ropeTailPositions;
+  ropeTailPositions.insert(rope.back());
 
   while (!fr.eof()) {
     std::string line = fr.nextLine();
@@ -98,6 +102,7 @@ void puzzle9(std::vector<std::string> arguments) {
                   .steps = std::stoi(getNextSSElem(ss))};
 
     for (auto i = 0; i < move.steps; i++) {
+      // SINGULAR ROPE
       auto newHeadPosition = moveHead(headPosition, move.direction);
       auto newTailPosition = tailPosition;
       if (std::abs(newHeadPosition.first - tailPosition.first) > 1 ||
@@ -108,10 +113,23 @@ void puzzle9(std::vector<std::string> arguments) {
       tailPositions.insert(newTailPosition);
       headPosition = newHeadPosition;
       tailPosition = newTailPosition;
+
+      // MULTIPLE KNOTS ROPE
+      rope[0] = newHeadPosition;
+      for (int i = 1; i < rope.size(); i++) {
+        auto newKnotPosition = rope[i];
+        if (std::abs(rope[i - 1].first - rope[i].first) > 1 ||
+            std::abs(rope[i - 1].second - rope[i].second) > 1) {
+          newKnotPosition = moveTail(rope[i], rope[i - 1]);
+        }
+        rope[i] = newKnotPosition;
+      }
+      ropeTailPositions.insert(rope.back());
     }
   }
 
   std::cout << tailPositions.size() << "\n";
+  std::cout << ropeTailPositions.size() << "\n";
 }
 } // namespace Puzzles
 } // namespace AdventOfCode
