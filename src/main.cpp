@@ -21,6 +21,7 @@ int main(int argc, char *argv[]) {
   program.registerFunction(AdventOfCode::Puzzles::puzzle6);
   program.registerFunction(AdventOfCode::Puzzles::puzzle7);
   program.registerFunction(AdventOfCode::Puzzles::puzzle8);
+  program.registerFunction(AdventOfCode::Puzzles::puzzle9);
   try {
     program.run();
   } catch (std::exception &e) {
