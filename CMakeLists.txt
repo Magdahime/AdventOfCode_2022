@@ -30,6 +30,7 @@ set(SOURCES ${PUZZLE_DIRECTORY}/puzzle1.cpp
             ${PUZZLE_DIRECTORY}/puzzle7.cpp
             ${PUZZLE_DIRECTORY}/puzzle8.cpp
             ${PUZZLE_DIRECTORY}/puzzle9.cpp
+            ${PUZZLE_DIRECTORY}/puzzle10.cpp
             ${SOURCE_DIRECTORY}/Program.cpp
             ${SOURCE_DIRECTORY}/main.cpp
             ${SOURCE_DIRECTORY}/FileReader.cpp
